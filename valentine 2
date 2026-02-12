@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeeshan, My Favourite Choomba 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #00fff7;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff00ff;
+    text-shadow: 0 0 20px #ff00ff;
+}
+
+p {
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1em;
+    background: #ff00ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff00ff;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #00fff7;
+    box-shadow: 0 0 20px #00fff7;
+}
+
+.hidden-message {
+    margin-top: 40px;
+    display: none;
+    font-size: 1.5em;
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+footer {
+    margin-top: 80px;
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Zeeshan 💜</h1>
+    <p>My Favourite Choomba in Night City.</p>
+    <p>This Valentine’s Day, I hacked the net just for you.</p>
+
+    <button onclick="revealLove()">Access Encrypted Love File</button>
+
+    <div class="hidden-message" id="loveMessage">
+        You’re the glitch in my system, the neon in my skyline,
+        and the only one I’d ride into cyberspace with.
+        <br><br>
+        I love you more than all of Night City combined. 💖
+    </div>
+
+    <br><br>
+
+    <button onclick="playMusic()">Activate Cyberpunk Vibes</button>
+
+    <audio id="bgMusic" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7c8d5f6c07.mp3?filename=cyberpunk-music-11254.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<footer>
+    Made with neon love 💜
+</footer>
+
+<script>
+function revealLove() {
+    document.getElementById("loveMessage").style.display = "block";
+}
+
+function playMusic() {
+    document.getElementById("bgMusic").play();
+}
+</script>
+
+</body>
+</html>
